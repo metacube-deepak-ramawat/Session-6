@@ -1,0 +1,97 @@
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.normal {
+  border: 2px solid orange;
+}
+
+.strong {
+  border: 2px solid green;
+}
+
+
+
+h1{
+    background-image: linear-gradient(to top, rgba(228, 116, 228, 0.534), rgba(76, 103, 224, 0.397));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(75, 74, 74);
+    text-shadow: 1px 1px 15px #fff;
+}
+
+.base-class{
+    /* rgba(182, 119, 182, 0.534), rgba(136, 152, 221, 0.397) */
+    background-image: linear-gradient(to top, rgba(228, 116, 228, 0.534), rgba(76, 103, 224, 0.397));
+    height: fit-content;
+    padding: 50px;
+    border-radius: 15px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(75, 74, 74);
+    text-shadow: 1px 1px 15px #fff;
+    h2{
+        font-style: italic;
+        font-size: xx-large;
+    }
+}
+
+
+.coustomcss{
+    input{
+        border: none;
+        padding: 10px;
+        width: 30%;
+        border-radius: 10px;
+    }
+    input:focus{
+        outline: none;
+        border: none;
+    }
+    select{
+        margin-left: 10px;
+        border: none;
+        padding: 10px;
+        width: 30%;
+        border-radius: 10px;
+    }
+    textarea{
+        border: none;
+        padding: 10px;
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    textarea:focus{
+        outline: none;
+        border: none;
+    }
+}
+
+.coustomcss2{
+    select{
+        margin-left: 10px;
+        border: none;
+        padding: 10px;
+        width: 15%;
+        border-radius: 10px;
+    }
+}
+
+#getPass{
+    display: block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}

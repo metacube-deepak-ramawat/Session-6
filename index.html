@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metacube Parking System</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Metacube Parking System</h1>
+    
+    <div id="employee-registration" class="base-class">
+        <h2>Employee Registration</h2>
+        <div id="form-container" class="coustomcss">
+            <input type="text" id="fullName" placeholder="Enter your name" autofocus/>
+        </div>
+        <div id="gender-container" class="hidden">
+            <p id="gender-label"></p>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+        <div id="email-container" class="coustomcss hidden">
+            <input type="email" id="email" placeholder="Enter your email" autofocus/>
+        </div>
+        <div id="password-container" class="coustomcss hidden">
+            <input type="password" id="password" placeholder="Enter your password" autofocus/>
+        </div>
+        <div id="confirm-password-container" class="coustomcss hidden">
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" autofocus/>
+        </div>
+        <div id="contact-container" class="hidden coustomcss">
+            <input type="text" id="contactNumber" placeholder="Enter your contact number" autofocus/>
+        </div>
+        <div id="registration-id" class="hidden coustomcss"></div>
+    </div>
+
+    <div id="vehicle-registration" class="hidden base-class">
+        <h2>Vehicle Registration</h2>
+        <div id="vehicle-form-container" class="coustomcss">
+            <input type="text" id="vehicleName" placeholder="Enter vehicle name" autofocus/>
+        </div>
+        <div id="vehicle-type-container" class="hidden coustomcss">
+            <label for="vehicleType">Which vehicle do you have?</label>
+            <select id="vehicleType">
+                <option value="" disabled selected>Select vehicle type </option>
+                <option value="Cycle">Cycle</option>
+                <option value="MotorCycle">MotorCycle</option>
+                <option value="FourWheeler">Four Wheeler</option>
+            </select>
+        </div>
+        <div id="vehicle-number-container" class="hidden coustomcss">
+            <input type="text" id="vehicleNumber" placeholder="Enter vehicle number" autofocus/>
+        </div>
+        <div id="employee-id-container" class="hidden coustomcss">
+            <input type="text" id="employeeId" placeholder="Enter employee ID" autofocus/>
+        </div>
+        <div id="identification-container" class="hidden coustomcss">
+            <textarea id="identification" placeholder="Enter identification"></textarea>
+        </div>
+        <div id="pass-selection" class="hidden coustomcss2">
+            <h3>Select Pass</h3>
+            <div id="pass-pricing"></div>
+            <label for="currency">Select Currency:</label>
+                <select id="currency">
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
+                    <option value="YEN">YEN</option>
+                </select>
+            <button id="getPass">Get Pass</button>
+        </div>
+        <div id="choose-plan" class="hidden">
+            <h3>Choose Plan</h3>
+            <select id="planSelection">
+                <option value="daily">Daily Pass</option>
+                <option value="monthly">Monthly Pass</option>
+                <option value="yearly">Yearly Pass</option>
+            </select>
+            <button id="generateTicket">Generate Ticket</button>
+        </div>
+    
+        <div id="ticket" class="hidden"></div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
